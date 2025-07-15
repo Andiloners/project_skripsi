@@ -1,0 +1,121 @@
+/* FTI Unibba Theme */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f8fb;
+    margin: 0;
+    color: #222;
+}
+
+.header {
+    background: #003366;
+    color: #fff;
+    padding: 20px 0 20px 30px;
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.sidebar {
+    background: #f9c900;
+    color: #003366;
+    width: 220px;
+    min-height: 100vh;
+    float: left;
+    padding: 30px 0 0 0;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.03);
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 20px 0;
+}
+.sidebar ul li a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 30px;
+    display: block;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background: #003366;
+    color: #fff;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 30px 40px;
+}
+
+button, .btn {
+    background: #003366;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover, .btn:hover {
+    background: #f9c900;
+    color: #003366;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px 10px;
+    text-align: left;
+}
+table th {
+    background: #003366;
+    color: #fff;
+}
+table tr:nth-child(even) {
+    background: #f4f8fb;
+}
+
+form label {
+    font-weight: 500;
+    margin-top: 10px;
+    display: block;
+}
+form input, form select, form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 6px 0 16px 0;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    font-size: 1em;
+    background: #fff;
+}
+form input[type="submit"], form button {
+    width: auto;
+}
+
+.footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.95em;
+}
+
+@media (max-width: 900px) {
+    .sidebar { width: 100%; min-height: auto; float: none; }
+    .main-content { margin-left: 0; padding: 20px 10px; }
+} 
