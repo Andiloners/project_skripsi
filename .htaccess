@@ -1,0 +1,7 @@
+# Aktifkan mod_rewrite
+RewriteEngine On
+
+# Redirect semua permintaan ke index.php, kecuali file/folder yang ada
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
